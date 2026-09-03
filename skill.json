@@ -1,0 +1,39 @@
+{
+  "name": "genpark-marketplace-sku-taxonomy-transformer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-marketplace catalog taxonomy transformer mapping internal product data into Amazon, Walmart, and Google shopping feeds.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "agent-commerce",
+  "tags": [
+    "channelengine",
+    "feedonomics",
+    "catalog-taxonomy",
+    "marketplace-feed",
+    "sku-mapping"
+  ],
+  "inputs": {
+    "internal_sku": {
+      "type": "string"
+    },
+    "target_marketplace": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "transformation_id": {
+      "type": "string"
+    },
+    "target_category_node_id": {
+      "type": "string"
+    },
+    "feed_schema_valid": {
+      "type": "boolean"
+    },
+    "syndication_feed_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
